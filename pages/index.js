@@ -365,18 +365,87 @@ Comparando todos (900, 1500, 3000, 2100, 2000), o maior deslocamento real é o d
       {
         id: "q136",
         code: "Q.136",
-        topic: "Custo-benefício",
+        topic: "Aritmética/Consumo",
         xp: 100,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        question: `Uma pessoa pretende instalar um kit de gás natural veicular (GNV) em seu carro. Na loja que escolheu para realizar a compra e instalação desse kit, havia cinco modelos de cilindro para armazenamento do gás, cujas capacidades, em metro cúbico, eram, respectivamente: 10, 14, 17, 21 e 25.
+
+O preço do cilindro é proporcional à sua capacidade. Esse carro rodará 30 km diariamente, 7 dias por semana, e o consumo do GNV é de 1 m³ a cada 13 km rodados.
+
+A pessoa escolherá o modelo de cilindro de menor preço e que garanta apenas um abastecimento semanal.
+
+Nessas condições, qual será a capacidade, em metro cúbico, do cilindro escolhido por essa pessoa?
+
+A) 10
+B) 14
+C) 17
+D) 21
+E) 25`,
+        explanation: `✅ **Gabarito: Letra C**
+
+Precisamos descobrir quantos metros cúbicos (m³) o carro gasta em uma semana inteira.
+
+1. **Quilometragem Semanal:**
+30 km por dia x 7 dias = **210 km**.
+
+2. **Cálculo do Gás Necessário:**
+O carro faz 13 km com 1 m³. Para rodar 210 km, dividimos:
+210 ÷ 13 ≈ 16,15 m³.
+
+3. **Escolha do Cilindro:**
+O motorista precisa de **16,15 m³**.
+* O cilindro de 14 m³ não aguenta (vai faltar gás).
+* O cilindro de 17 m³ aguenta (sobra um pouquinho e é o mais barato entre os que servem).
+* O de 21 m³ serve, mas é mais caro.
+
+Logo, a melhor opção econômica é o de **17 m³**.`,
       },
       {
         id: "q163",
         code: "Q.163",
-        topic: "Visual/Lógica",
+        topic: "Interpretação de Gráficos",
         xp: 100,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        image: "/q163.png",
+        question: `Em uma escola, todos os estudantes do ensino médio praticam uma das três modalidades esportivas oferecidas como atividade física, e cada um deles pratica somente uma dessas atividades. 
+
+Os gráficos trazem alguns dados relativos aos quantitativos de estudantes que praticam essas modalidades esportivas nessa escola, apesar de algumas quantidades não terem sido informadas.
+
+(Considere o gráfico de barras mostrando as 3 séries e o gráfico de pizza mostrando a distribuição total).
+
+Qual é a quantidade de estudantes no ensino médio dessa escola?
+
+A) 720
+B) 360
+C) 320
+D) 288
+E) 240`,
+        explanation: `✅ **Gabarito: Letra B**
+
+Vamos resolver usando a lógica visual e eliminação:
+
+1. **O Gráfico de Pizza (O Segredo):**
+Olhe para a parte azul (Futebol). Ela ocupa exatamente **METADE** do círculo.
+Isso significa que **Futebol = 50%** e a soma de **(Vôlei + Basquete) = 50%**.
+Logo: Total de Futebol = Total de Vôlei + Total de Basquete.
+
+2. **O Dado Numérico:**
+O gráfico diz que **Basquete = 80** alunos.
+
+3. **O Gráfico de Barras (Quem é maior?):**
+Compare as barras amarelas (Vôlei) com as roxas (Basquete):
+- Na 2ª e 3ª série, elas têm o mesmo tamanho.
+- Mas na 1ª série, a barra de **Vôlei é maior**.
+Conclusão: O total de alunos do Vôlei é **MAIOR** que o do Basquete (V > 80).
+
+4. **Testando as Alternativas:**
+Sabemos que o Total Geral é o dobro de (Vôlei + Basquete).
+Vamos testar as opções:
+
+* **Se o total fosse 320 (Letra C):** Metade seria 160. Se Basquete é 80, o Vôlei teria que ser 80 também. (Errado, pois Vôlei > Basquete).
+* **Se o total fosse 288 (Letra D):** Metade seria 144. Se Basquete é 80, o Vôlei teria que ser 64. (Errado, pois Vôlei seria menor que Basquete).
+* **Se o total fosse 360 (Letra B):** Metade seria 180. Se Basquete é 80, o Vôlei seria 100.
+    * Vôlei (100) > Basquete (80)? **SIM!** Faz todo sentido visualmente.
+
+Resposta: **360**.`,
       },
     ],
   },
@@ -389,42 +458,214 @@ Comparando todos (900, 1500, 3000, 2100, 2000), o maior deslocamento real é o d
       {
         id: "q161",
         code: "Q.161",
-        topic: "Mapa/Lógica",
+        topic: "Lógica Espacial / Mapa",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        image: "/q161.png",
+        question: `Os quadrados em cinza na figura representam os quarteirões de uma parte do bairro onde moram João e seu amigo.
+        
+O quadrado pequeno (A), pintado em preto e localizado no canto superior esquerdo de um quadrado maior, indica a casa do amigo de João. João também mora em uma casa de esquina, mas na extremidade nordeste de um quarteirão.
+
+Para chegar à casa de seu amigo, ao sair de casa, João deve caminhar pelo quarteirão onde mora na direção oeste, dobrar à direita, caminhar por três quarteirões na direção norte e dobrar à esquerda. A casa de seu amigo fica no segundo quarteirão a oeste.
+
+O quarteirão onde se encontra a casa de João é representado pelo quadrado com a letra:
+
+A) P.
+B) Q.
+C) R.
+D) S.
+E) T.`,
+        explanation: `✅ **Gabarito: Letra A**
+
+A melhor técnica para essa questão é o **Caminho Inverso** (fazer de trás para frente). Vamos sair da Casa A e "desfazer" os movimentos até achar a casa do João.
+
+1. **O Final:** "A casa fica no 2º quarteirão a Oeste após virar à esquerda."
+* *Inverso:* Saindo de A, vamos 2 quarteirões para **LESTE**.
+* *Onde paramos:* Chegamos na rua vertical que fica à direita do bloco S.
+
+2. **O Meio:** "Caminhar 3 quarteirões na direção Norte."
+* *Inverso:* Vamos descer 3 quarteirões na direção **SUL**.
+* *Contagem:* Passamos pelo bloco S (1), pelo bloco abaixo dele (2) e chegamos no bloco P (3).
+
+3. **O Início:** "Caminhar para Oeste e dobrar à direita (para subir)."
+* *Inverso:* Se ele subiu vindo do Oeste, o ponto de partida está à direita.
+* *Verificação:* O enunciado diz que João mora na extremidade **Nordeste** (canto superior direito).
+* Olhando para o Bloco **P**, o canto Nordeste é exatamente onde nossa volta terminou.
+
+**Conclusão:** João mora no quarteirão **P**.`,
       },
       {
         id: "q144",
         code: "Q.144",
-        topic: "Geometria/Pintura",
+        topic: "Geometria Espacial",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        question: `Uma fábrica utilizou uma impressora 3D para produzir o protótipo de uma peça. O protótipo tem forma de um poliedro convexo, obtido pela justaposição de dois sólidos distintos:
+        
+1. Um prisma hexagonal regular reto.
+2. Um tronco de pirâmide hexagonal reta.
+
+A base maior do tronco de pirâmide coincide com uma das bases do prisma (elas foram coladas uma na outra).
+
+Após a impressão do protótipo, ele foi encaminhado ao setor de customização para realização da pintura de sua superfície. O critério definido para realização da pintura considera que faces congruentes entre si (iguais em forma e tamanho) devem ser pintadas com uma mesma cor, e faces não congruentes entre si devem apresentar cores distintas.
+
+Qual é a quantidade de cores utilizadas para pintar o protótipo?
+
+A) 9
+B) 8
+C) 6
+D) 4
+E) 3`,
+        explanation: `✅ **Gabarito: Letra D**
+
+Vamos "desmontar" o objeto mentalmente e contar os tipos de faces visíveis. Lembre-se: a face onde os dois sólidos se encostam é interna e **não é pintada**.
+
+**Parte 1: O Prisma (embaixo)**
+* **Face Lateral:** São 6 retângulos idênticos. (1ª Cor)
+* **Base de Baixo:** É um hexágono regular. (2ª Cor)
+* *Base de Cima:* Está colada no tronco, então não conta.
+
+**Parte 2: O Tronco de Pirâmide (em cima)**
+* **Face Lateral:** São 6 trapézios idênticos. (3ª Cor)
+* **Base de Cima:** É um hexágono menor (tampinha). (4ª Cor)
+* *Base de Baixo:* Está colada no prisma, não conta.
+
+**Análise das Bases:**
+A base do prisma (hexágono grande) é diferente da base do topo do tronco (hexágono pequeno), pois o tronco vai afunilando. Logo, são cores diferentes.
+
+**Total de Cores:**
+1. Retângulos (laterais do prisma)
+2. Hexágono Grande (fundo)
+3. Trapézios (laterais do tronco)
+4. Hexágono Pequeno (topo)
+
+Resultado: **4 Cores**.`,
       },
       {
         id: "q165",
         code: "Q.165",
-        topic: "Estatística",
+        topic: "Estatística (Desvio Padrão)",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        image: "/q165.png",
+        question: `Em um estudo clínico, 55 mulheres foram distribuídas, aleatoriamente, em 5 grupos de 11 pessoas. Para testar uma nova medicação, será escolhido um grupo no qual a maioria das mulheres tenham idades entre 20 e 30 anos. Os demais grupos tomarão placebo ou medicações já existentes no mercado.
+
+O quadro, parcialmente preenchido, informa alguns dados relativos às idades das mulheres desses grupos.
+
+Mesmo com o quadro incompleto, foi possível selecionar um desses grupos porque, apenas com os dados apresentados no quadro, foi identificado um grupo que, certamente, atendia ao critério de escolha.
+
+O grupo escolhido foi o:
+
+A) 1.
+B) 2.
+C) 3.
+D) 4.
+E) 5.`,
+        explanation: `✅ **Gabarito: Letra D**
+
+O objetivo é ter a maioria das pessoas perto dos **25 anos** (entre 20 e 30).
+
+Vamos analisar as ferramentas que temos:
+1. **Média, Mediana e Moda:** Mostram o "centro". Todos os grupos giram em torno de 25. Isso é bom, mas não garante nada. (Eu posso ter média 25 com uma pessoa de 0 anos e outra de 50).
+2. **Desvio Padrão:** Mostra a **DISPERSÃO** (o espalhamento). É aqui que matamos a questão.
+
+* Quanto **MAIOR** o desvio padrão, mais bagunçado e espalhado é o grupo (podem ter idosos e crianças misturados).
+* Quanto **MENOR** o desvio padrão, mais **HOMOGÊNEO** é o grupo (todo mundo tem quase a mesma idade).
+
+Olhe para o **Grupo 4**:
+* Média: 25.
+* **Desvio Padrão: 1**.
+
+Um desvio de apenas 1 significa que as idades variam pouquíssimo (provavelmente 24, 25, 26...). É matematicamente certo que a maioria absoluta está entre 20 e 30.
+
+Já o Grupo 1 (Desvio 10) e Grupo 2 (Desvio 9) são muito "espalhados", com alto risco de ter gente fora da faixa.`,
       },
       {
         id: "q168",
         code: "Q.168",
-        topic: "Otimização",
+        topic: "Matemática Financeira",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        image: "/q168.png",
+        question: `Em um país, a primeira etapa para obtenção da carteira de motorista é a contratação de três produtos:
+
+• pacote com 20 aulas teóricas;
+• pacote com 10 aulas práticas;
+• aluguel do veículo para realização das aulas práticas.
+
+Uma pessoa que pretende obter a carteira de motorista pesquisou o valor do aluguel do veículo e os valores de cada aula teórica e de cada aula prática em três autoescolas. O quadro apresenta esses valores.
+
+Ela contratará os três produtos numa mesma autoescola de modo que o custo total nessa primeira etapa seja o menor possível.
+
+A autoescola que será contratada é a:
+
+A) I, com o custo total de R$ 1 400,00.
+B) II, com o custo total de R$ 280,00.
+C) II, com o custo total de R$ 1 300,00.
+D) III, com o custo total de R$ 460,00.
+E) III, com o custo total de R$ 1 200,00.`,
+        explanation: `✅ **Gabarito: Letra E**
+
+Para resolver, precisamos calcular o **Custo Total** de cada autoescola.
+A fórmula é:
+(20 x Preço Teórica) + (10 x Preço Prática) + (Aluguel Veículo).
+
+Vamos calcular uma por uma:
+
+**1. Autoescola I:**
+* Teórica: 20 x 10 = 200
+* Prática: 10 x 80 = 800
+* Aluguel: 400
+* **Total:** 200 + 800 + 400 = **R$ 1.400,00**
+
+**2. Autoescola II:**
+* Teórica: 20 x 30 = 600
+* Prática: 10 x 50 = 500
+* Aluguel: 200
+* **Total:** 600 + 500 + 200 = **R$ 1.300,00**
+
+**3. Autoescola III:**
+* Teórica: 20 x 20 = 400
+* Prática: 10 x 40 = 400
+* Aluguel: 400
+* **Total:** 400 + 400 + 400 = **R$ 1.200,00**
+
+Comparando os totais (1400, 1300, 1200), a mais barata é a **Autoescola III** com custo de **R$ 1.200,00**.`,
       },
       {
         id: "q159",
         code: "Q.159",
-        topic: "Divisão",
+        topic: "Conversão de Unidades",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        question: `O dono de uma sorveteria armazena sorvete em potes de 20.000 cm³. Ele serve o sorvete em taças, em porções de 250 mL.
+
+A quantidade de taças que ele consegue servir a partir de um pote cheio de sorvete é:
+
+A) 5.
+B) 8.
+C) 50.
+D) 80.
+E) 800.`,
+        explanation: `✅ **Gabarito: Letra D**
+
+Para resolver essa questão, você precisa da **Chave de Ouro** das unidades de volume:
+
+💧 **1 cm³ = 1 mL**
+
+Isso mesmo, é uma troca direta. Um dado de 1 centímetro cúbico comporta exatamente 1 mililitro de água (ou sorvete).
+
+1. **Converter o Pote:**
+Se o pote tem 20.000 cm³, ele tem **20.000 mL**.
+
+2. **Fazer a Divisão:**
+Queremos saber quantas taças de 250 mL cabem no pote.
+Conta: 20.000 ÷ 250
+
+*Cortando um zero de cada lado para facilitar:*
+2.000 ÷ 25
+
+*Dica de cálculo mental:*
+- 100 ÷ 25 = 4
+- 1.000 ÷ 25 = 40
+- 2.000 ÷ 25 = **80**
+
+Resposta: **80 taças**.`,
       },
       {
         id: "q141",
