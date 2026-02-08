@@ -670,50 +670,241 @@ Resposta: **80 taças**.`,
       {
         id: "q141",
         code: "Q.141",
-        topic: "Proporção",
+        topic: "Lógica Aritmética",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        question: `Uma distribuidora de combustível possui caminhões-tanque com capacidade de 30.000 litros cada. Em qualquer transporte realizado por esses caminhões, um mesmo volume de combustível é descartado, pois fica com muitas impurezas. Esse volume descartado independe da quantidade transportada.
+
+Um posto de combustível encomendou 10.000 litros de gasolina dessa distribuidora, que enviou 10.200 litros, considerando o volume descartado no transporte. Mesmo assim, a quantidade de gasolina entregue ao posto foi de 9.900 litros.
+
+Em um novo pedido, esse posto solicitou que fosse entregue exatamente o dobro do volume de gasolina encomendado no pedido anterior.
+
+Utilizando o mesmo caminhão da entrega anterior, qual é o volume mínimo de gasolina, em litro, que a distribuidora deverá enviar para garantir a entrega da quantidade encomendada nesse novo pedido?
+
+A) 20 100
+B) 20 200
+C) 20 300
+D) 20 400
+E) 20 600`,
+        explanation: `✅ **Gabarito: Letra C**
+
+Para resolver, precisamos descobrir duas coisas: o **Volume Descartado (Lixo)** e o **Novo Pedido**.
+
+1. **Descobrindo o Desperdício (Fixo):**
+A distribuidora enviou 10.200, mas só chegaram 9.900.
+Onde foi parar o resto? No lixo (impurezas).
+Conta: 10.200 - 9.900 = **300 Litros**.
+*O texto diz que esse valor é FIXO (independe da quantidade).*
+
+2. **O Novo Pedido:**
+O posto quer o dobro do volume encomendado antes (10.000).
+Novo Pedido: 2 x 10.000 = **20.000 Litros**.
+
+3. **Quanto a distribuidora deve enviar?**
+Ela precisa enviar os 20.000 que o cliente quer **MAIS** os 300 que vão se perder no caminho.
+
+Conta Final: 20.000 + 300 = **20.300 Litros**.
+
+🚨 **A Pegadinha (Letra E):** Muita gente dobra o desperdício (300 x 2 = 600) achando que é proporcional. Não caia nessa! O enunciado diz que o volume descartado **independe** da quantidade.`,
       },
       {
         id: "q150",
         code: "Q.150",
-        topic: "Regra de Três",
+        topic: "Regra de Três Composta",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        question: `Uma fábrica de tijolos ecológicos com 3 funcionários, cada um trabalhando 6 horas diárias, produz 720 unidades por dia.
+
+Para atender ao crescimento da demanda por esse tipo de tijolo, essa fábrica passou a ter 5 funcionários, cada um trabalhando 9 horas por dia, aumentando, assim, sua capacidade de produção. Todos os funcionários produzem igual quantidade de tijolos a cada hora, independentemente de trabalharem 6 ou 9 horas diárias.
+
+O número de tijolos fabricados diariamente após o aumento da capacidade de produção é:
+
+A) 800.
+B) 1 080.
+C) 1 200.
+D) 1 800.
+E) 2 520.`,
+        explanation: `✅ **Gabarito: Letra D**
+
+Podemos resolver usando a lógica da "Força de Trabalho" (ou Regra de Três Composta).
+
+**Passo 1: Calcular a "Potência" inicial**
+Tínhamos 3 pessoas trabalhando 6 horas.
+Esforço total = 3 x 6 = **18 horas de trabalho** para fazer 720 tijolos.
+
+**Passo 2: Descobrir a velocidade da fábrica**
+Se com 18 horas de trabalho eles fazem 720 tijolos, quanto se faz em 1 hora?
+720 ÷ 18 = **40 tijolos por hora de trabalho**.
+
+**Passo 3: Calcular a "Potência" nova**
+Agora temos 5 pessoas trabalhando 9 horas.
+Novo esforço total = 5 x 9 = **45 horas de trabalho**.
+
+**Passo 4: Resultado Final**
+Se a velocidade é 40 tijolos por hora, e agora temos 45 horas de força:
+45 x 40 = **1.800 tijolos**.
+
+---
+*Ou pela fórmula direta da Regra de Três:*
+(720 / x) = (3 / 5) * (6 / 9)
+720 / x = 18 / 45
+18x = 720 * 45
+x = 32400 / 18
+x = **1.800**`,
       },
       {
         id: "q157",
         code: "Q.157",
-        topic: "Álgebra Simples",
+        topic: "Álgebra / Equação de 1º Grau",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        question: `O cortisol é um hormônio produzido pelas glândulas adrenais e pode ser considerado um importante marcador do estresse fisiológico. Em um estudo desenvolvido com enfermeiros, foi verificado que a concentração de cortisol salivar em um dia de trabalho, denotada por T, era, em média, 1,59 vezes a concentração de cortisol salivar em um dia de folga, denotada por F.
+
+Nesse estudo, a relação obtida entre T e F foi:
+
+A) T = 1,59 + F
+B) F = 1,59 + T
+C) T / F = 1,59
+D) F / T = 1,59
+E) F . T = 1,59`,
+        explanation: `✅ **Gabarito: Letra C**
+
+Vamos traduzir o enunciado para a matemática passo a passo:
+
+1. **"A concentração no trabalho (T)..."**
+2. **"...era (igual)..."**
+3. **"...1,59 vezes a concentração na folga (F)."**
+
+Equação montada:
+**T = 1,59 . F**
+
+Agora, olhando as alternativas, vemos que elas estão em forma de fração. Para chegar lá, basta passar o **F** (que está multiplicando) para o outro lado **dividindo**:
+
+**T / F = 1,59**
+
+Isso corresponde exatamente à **Letra C**.`,
       },
       {
         id: "q147",
         code: "Q.147",
-        topic: "Porcentagem",
+        topic: "Porcentagem / Gráficos",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        image: "/q147.png",
+        question: `Uma escola de idiomas oferece cursos de inglês, espanhol, francês e alemão. Os gráficos apresentam a distribuição percentual das matrículas, por idioma, em 2023, e a distribuição da quantidade de matrículas, por idioma, em 2024.
+
+Para planejar as atividades de 2025, o gerente da escola estimou que:
+1. O total de matrículas será o mesmo de 2024.
+2. A distribuição percentual das matrículas (por idioma) será igual à registrada em 2023.
+
+Segundo essa estimativa, o número de matrículas no curso de francês para o ano de 2025 será:
+
+A) 2.
+B) 12.
+C) 20.
+D) 22.
+E) 40.`,
+        explanation: `✅ **Gabarito: Letra E**
+
+Para descobrir quantos alunos de Francês teremos em 2025, precisamos de dois números: o **Total de Alunos** e a **Porcentagem de Francês**.
+
+**Passo 1: Descobrir o TOTAL de alunos (usando dados de 2024)**
+O enunciado diz que o total será o mesmo de 2024. Vamos somar as barras do gráfico da direita:
+* Inglês: 280
+* Espanhol: 80
+* Francês: 20
+* Alemão: 20
+Total = 280 + 80 + 20 + 20 = **400 alunos**.
+
+**Passo 2: Descobrir a Porcentagem de Francês (usando dados de 2023)**
+O enunciado diz que a porcentagem será a mesma de 2023. Olhando o gráfico de pizza (esquerda):
+* Francês (verde) = **10%**.
+
+**Passo 3: A conta final**
+Quanto é 10% de 400?
+0,10 x 400 = **40 alunos**.
+
+Resposta: **40**.`,
       },
       {
         id: "q156",
         code: "Q.156",
         topic: "Escalas",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        image: "/q156.png",
+        question: `Um artista, que costuma fazer desenhos com areia na praia, pediu a um banhista que fizesse um pequeno desenho, que serviria de esboço para uma grande obra de arte a ser feita na areia. Esse desenho está representado na figura (um sol com medidas indicadas de 20 cm).
+
+Após a conclusão, a obra de arte obtida manteve as mesmas proporções do desenho feito pelo banhista, sendo que as medidas indicadas na figura (20 cm) foram ampliadas para 30 m.
+
+Em qual escala esse desenho representa a obra de arte?
+
+A) 1 : 1,5
+B) 1 : 2,25
+C) 1 : 10
+D) 1 : 100
+E) 1 : 150`,
+        explanation: `✅ **Gabarito: Letra E**
+
+Para calcular a escala, usamos a regra de ouro:
+**Escala = Tamanho no Desenho / Tamanho Real**
+
+Mas CUIDADO! 🚨
+As unidades precisam ser iguais. Não podemos dividir cm por m.
+
+1. **Dados:**
+* Desenho (d): 20 cm
+* Real (D): 30 m
+
+2. **Conversão (O Pulo do Gato):**
+Vamos passar metros para centímetros (multiplicando por 100).
+30 m = **3.000 cm**.
+
+3. **Cálculo da Escala:**
+E = 20 / 3.000
+
+Agora simplificamos a fração (corta um zero de cada lado):
+E = 2 / 300
+
+Dividindo em cima e embaixo por 2:
+E = **1 / 150**
+
+Ou seja, escala **1 : 150**.`,
       },
       {
         id: "q166",
         code: "Q.166",
-        topic: "Pace/Média",
+        topic: "Média e Tempo (Pace)",
         xp: 150,
-        question: "Texto da questão...",
-        explanation: "Resolução...",
+        image: "/q166.png",
+        question: `Pace é um termo usado por um corredor para denominar o seu ritmo médio em uma corrida. Representa o tempo médio, em segundo, que esse corredor leva para percorrer 1 km.
+
+O esquema apresenta o tempo, em segundo, que um corredor levou para cruzar as marcas que definem os quatro primeiros trechos de 1 km, em uma corrida de 5 km, e o tempo gasto para percorrer cada trecho de 1 km.
+
+Para que consiga repetir nessa corrida seu melhor pace em corridas de 5 km (considere que seu melhor pace seja de 4 min 41 s, ou 281 s/km), seu tempo, no 5º trecho, deve ser quantos segundos menor do que o que ele gastou para percorrer o 4º trecho?
+
+A) 1
+B) 2
+C) 8
+D) 9
+E) 15`,
+        explanation: `✅ **Gabarito: Letra E**
+
+Para resolver, precisamos descobrir quanto tempo ele tem para correr o último quilômetro (5º trecho) para atingir a meta total.
+
+1. **Definir a Meta (Tempo Total):**
+O "Melhor Pace" é de **281 segundos por km**.
+Como a corrida tem 5 km, o tempo total deve ser:
+5 x 281 = 1.405 segundos.
+
+2. **Calcular o Tempo Gasto até agora (4 km):**
+Olhando a linha azul do gráfico (tempo acumulado), ao cruzar a marca de 4 km, o cronômetro marcava **1.132 s**.
+
+3. **Descobrir o tempo para o 5º Trecho:**
+Tempo Restante = Meta Total - Tempo Já Gasto
+1.405 - 1.132 = 273 segundos.
+Ou seja, ele precisa correr o último km em **273 s**.
+
+4. **Comparar com o 4º Trecho:**
+O gráfico mostra (linha verde) que ele correu o 4º trecho em **288 s**.
+A pergunta é: "Quanto o novo tempo (273) deve ser **menor** que o anterior (288)?"
+
+Conta: 288 - 273 = **15 segundos**.`,
       },
     ],
   },
@@ -726,90 +917,462 @@ Resposta: **80 taças**.`,
       {
         id: "q149",
         code: "Q.149",
-        topic: "Poliedro",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Geometria Espacial (Vértices)",
+        xp: 150,
+        image: "/q149.png",
+        question: `A cúpula pentagonal giralongada é um poliedro de Johnson, cujas faces são polígonos regulares, mas que não é um poliedro de Platão, de Arquimedes, prisma ou antiprisma.
+        
+As figuras apresentam esse poliedro em duas posições e uma de suas planificações.
+
+Quantos vértices tem esse poliedro?
+
+A) 21
+B) 25
+C) 55
+D) 80
+E) 110`,
+        explanation: `✅ **Gabarito: Letra B**
+
+Vamos resolver contando os vértices por "camadas", olhando para a estrutura do objeto 3D:
+
+1. **O Topo (Tampinha):**
+A figura mostra que o topo é um **Pentágono** (face verde).
+Logo, temos **5 vértices** na camada superior.
+
+2. **A Base (Fundo):**
+Na planificação (desenho aberto), vemos um polígono vermelho grande de **10 lados** (Decágono).
+Isso significa que a base do objeto é um decágono.
+Logo, temos **10 vértices** na camada inferior.
+
+3. **O Meio (A conexão):**
+A forma geométrica é uma "Cúpula" (que alarga de 5 para 10) conectada a uma base.
+Para ligar o pentágono do topo (5 pontas) à base de decágono (10 pontas) através de uma estrutura "giralongada" (que adiciona altura), existe um anel intermediário onde a cúpula termina e a extensão começa.
+Esse anel intermediário tem o mesmo tamanho da base maior da cúpula, ou seja, **10 vértices**.
+
+**Somando as camadas:**
+* Anel Superior: 5 vértices
+* Anel do Meio (Junção): 10 vértices
+* Anel Inferior (Base): 10 vértices
+
+Total: 5 + 10 + 10 = **25 vértices**.`,
       },
       {
         id: "q176",
         code: "Q.176",
-        topic: "Velocidade",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Regra de Três / Proporção",
+        xp: 100,
+        question: `A final de um campeonato de futebol foi disputada em 2 tempos regulamentares, de 45 minutos cada, sem acréscimos, com uma prorrogação de 30 minutos, também sem acréscimos.
+
+Um jogador entrou no início do segundo tempo, com um equipamento para medir a distância percorrida durante sua participação no jogo.
+
+Ao final do segundo tempo regulamentar, esse jogador havia percorrido 4,5 km. Ele manteve na prorrogação a mesma velocidade média que havia mantido no segundo tempo regulamentar.
+
+A distância percorrida por esse jogador durante sua participação na partida, em quilômetro, foi:
+
+A) 4,5.
+B) 6,0.
+C) 7,5.
+D) 9,0.
+E) 12,0.`,
+        explanation: `✅ **Gabarito: Letra C**
+
+Vamos resolver usando a lógica dos números "amigos":
+
+1. **Análise do 2º Tempo:**
+O jogador correu **4,5 km** em **45 minutos**.
+Olhe para os números: 4,5 e 45.
+Isso significa que a velocidade dele é de **0,1 km por minuto** (basta dividir 4,5 por 45).
+
+2. **Cálculo da Prorrogação:**
+A prorrogação dura **30 minutos**.
+Se ele corre 0,1 km a cada minuto:
+30 x 0,1 = **3,0 km**.
+
+3. **Total da Participação:**
+A questão pede a distância TOTAL (2º Tempo + Prorrogação).
+4,5 km (que ele já tinha corrido) + 3,0 km (da prorrogação) = **7,5 km**.
+
+---
+*Ou pela Regra de Três direta:*
+45 min --- 4,5 km
+30 min --- x km
+
+45x = 135
+x = 3 km.
+
+Total: 4,5 + 3 = **7,5 km**.`,
       },
       {
         id: "q158",
         code: "Q.158",
-        topic: "Financeira",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Matemática Financeira",
+        xp: 150,
+        question: `Um estacionamento possui 120 vagas para veículos, e todas essas vagas estão ocupadas. Cada cliente paga uma mensalidade para utilizar uma vaga, que é calculada com base nas despesas mensais do estacionamento e no lucro pretendido.
+
+As despesas mensais do estacionamento são: R$ 14 240,00 com manutenção mais R$ 36,00 de seguro por veículo.
+
+O lucro do estacionamento é determinado pela diferença do valor arrecadado com as mensalidades pelas despesas efetuadas. A partir do mês seguinte, o valor do seguro por veículo aumentará em 20%, e as despesas com manutenção permanecerão sem alterações.
+
+Com isso, o dono do estacionamento reajustará as mensalidades para obter um lucro mensal de R$ 10 000,00. Apesar desse reajuste, todas as vagas continuarão ocupadas.
+
+O valor, em real, da mensalidade reajustada será:
+
+A) 185,60.
+B) 226,09.
+C) 245,20.
+D) 268,93.
+E) 285,60.`,
+        explanation: `✅ **Gabarito: Letra C**
+
+Para descobrir o valor da mensalidade (preço por pessoa), precisamos saber o **TOTAL** de dinheiro que o dono precisa arrecadar e dividir pelo número de clientes (120).
+
+**Passo 1: Calcular o novo valor do Seguro**
+O seguro era R$ 36,00 e aumentou 20%.
+20% de 36 = 7,20.
+Novo Seguro = 36 + 7,20 = **R$ 43,20 por carro**.
+
+**Passo 2: Calcular as Despesas Totais**
+* Manutenção Fixa: R$ 14.240,00
+* Seguro Total (120 carros x R$ 43,20): R$ 5.184,00
+* **Despesa Total:** 14.240 + 5.184 = **R$ 19.424,00**.
+
+**Passo 3: Adicionar o Lucro Desejado**
+O dono quer pagar as contas (19.424) E AINDA sobrar R$ 10.000 no bolso.
+Receita Necessária = 19.424 + 10.000 = **R$ 29.424,00**.
+
+**Passo 4: Dividir pelos Clientes**
+Agora dividimos o montante total pelos 120 clientes.
+Mensalidade = 29.424 ÷ 120
+
+*Conta:*
+29.424 ÷ 120 = **245,20**
+
+**Resultado:** R$ 245,20.`,
       },
       {
         id: "q167",
         code: "Q.167",
-        topic: "Carro Flex",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Interpretação de Gráficos",
+        xp: 150,
+        image: "/q167.png",
+        question: `Uma pessoa tem um carro bicombustível, que funciona a gás natural veicular (GNV) e a gasolina. O rendimento do carro depende da velocidade em que o carro trafega, conforme os gráficos.
+
+Durante um feriado, essa pessoa realizou uma viagem de 240 km. Para obter uma estimativa de gasto de combustível, assuma que em todo o trajeto se manteve uma velocidade constante de 60 km/h.
+
+Considere que, durante metade do caminho, foi utilizado apenas GNV e, na outra metade, apenas gasolina. O preço do metro cúbico de GNV é R$ 2,00 e o do litro de gasolina é R$ 3,00.
+
+Qual foi a diferença, em real, entre os gastos totais com gasolina e com GNV?
+
+A) 4
+B) 8
+C) 14
+D) 21
+E) 30`,
+        explanation: `✅ **Gabarito: Letra D**
+
+Vamos dividir o problema em passos. A viagem total é de 240 km, sendo metade (120 km) com cada combustível.
+
+**Passo 1: Ler os gráficos na velocidade de 60 km/h**
+* **GNV (Gráfico da Esquerda):** Olhando no eixo X em 60, a linha azul sobe até bater na marca de **10 km/m³**.
+* **Gasolina (Gráfico da Direita):** Olhando no eixo X em 60, a linha azul sobe até bater na marca de **8 km/L**.
+
+**Passo 2: Calcular o Gasto com GNV**
+* Distância: 120 km.
+* Rendimento: 10 km/m³.
+* Volume necessário: 120 ÷ 10 = **12 m³**.
+* Custo: 12 x R$ 2,00 = **R$ 24,00**.
+
+**Passo 3: Calcular o Gasto com Gasolina**
+* Distância: 120 km.
+* Rendimento: 8 km/L.
+* Volume necessário: 120 ÷ 8 = **15 Litros**.
+* Custo: 15 x R$ 3,00 = **R$ 45,00**.
+
+**Passo 4: A Diferença**
+A questão pede a diferença entre os gastos:
+45,00 (Gasolina) - 24,00 (GNV) = **R$ 21,00**.`,
       },
       {
         id: "q139",
         code: "Q.139",
-        topic: "Ciclovia",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Geometria Circular",
+        xp: 150,
+        image: "/q139.png",
+        question: `No entorno de uma lagoa circular, cujo raio mede 1 km, há uma ciclovia. Devido aos frequentes roubos de bicicleta, a prefeitura planeja alocar policiais em posições estratégicas para patrulhar essa ciclovia.
+
+Um ponto da ciclovia é considerado protegido se houver pelo menos um policial a, no máximo, 200 m de distância daquele ponto.
+Desconsidere a largura da pista da ciclovia e utilize 3 como aproximação para π (pi).
+
+Nessas condições, a quantidade mínima necessária de policiais a serem alocados ao longo dessa ciclovia para torná-la protegida é:
+
+A) 4.
+B) 8.
+C) 15.
+D) 30.
+E) 60.`,
+        explanation: `✅ **Gabarito: Letra C**
+
+Para resolver, precisamos de dois números: o **Tamanho Total da Ciclovia** e o **Tamanho que cada Policial cobre**.
+
+1. **Calculando a Ciclovia (Circunferência):**
+A fórmula é C = 2 x pi x R.
+* Raio (R) = 1 km = **1.000 metros**.
+* Pi = 3.
+
+Conta:
+C = 2 x 3 x 1.000 = **6.000 metros**.
+
+2. **Calculando a Cobertura do Policial:**
+O enunciado diz que o policial protege quem está a até 200 m de distância.
+Isso significa que ele protege 200 m para a esquerda **E** 200 m para a direita.
+
+Cobertura por Policial = 200 + 200 = **400 metros**.
+
+3. **Quantos policiais precisamos?**
+Basta dividir o total pela cobertura de cada um.
+6.000 ÷ 400
+
+*Cortando dois zeros:*
+60 ÷ 4 = **15**.
+
+Resposta: **15 Policiais**.`,
       },
       {
         id: "q170",
         code: "Q.170",
-        topic: "Arquimedes",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Geometria Espacial / Volume",
+        xp: 150,
+        image: "/q170.png",
+        question: `Uma caixa de descarga, acoplada a um vaso sanitário, tem a forma de paralelepípedo reto retângulo cujas dimensões internas da base são 2,5 dm e 1,5 dm. Nessa caixa há uma boia que interrompe o abastecimento quando a altura da coluna de água atinge 2 dm, conforme a figura.
+
+A cada acionamento da descarga, todo o volume de água contida na caixa é despejado no vaso. Para reduzir o volume de água despejado a cada acionamento, uma pessoa colocará, no interior dessa caixa, garrafas de 300 mL, cheias de areia e tampadas, de modo a ficarem submersas quando o abastecimento for interrompido.
+
+Para garantir o funcionamento eficiente, o mínimo de água despejada a cada acionamento deve ser de 5 L.
+
+A quantidade máxima de garrafas que serão colocadas nessa caixa, garantindo um funcionamento eficiente, é igual a:
+
+A) 10.
+B) 8.
+C) 4.
+D) 3.
+E) 2.`,
+        explanation: `✅ **Gabarito: Letra B**
+
+Vamos passo a passo organizar as unidades e os volumes.
+
+**Passo 1: Calcular o Volume Total da Caixa**
+A caixa é um paralelepípedo. O volume é: Comprimento x Largura x Altura.
+V = 2,5 dm x 1,5 dm x 2 dm
+V = 7,5 dm³
+
+💡 **Conversão Mágica:**
+Como 1 dm³ = 1 Litro, a caixa comporta **7,5 Litros** de água.
+
+**Passo 2: Calcular o "Espaço para as Garrafas"**
+A caixa tem 7,5 L, mas precisamos garantir que **5 L sejam de água pura**.
+O espaço que sobra pode ser ocupado pelas garrafas.
+Espaço Livre = 7,5 L (Total) - 5,0 L (Água necessária)
+Espaço Livre = **2,5 Litros**.
+
+**Passo 3: Quantas garrafas cabem nesse espaço?**
+Cada garrafa tem **300 mL**.
+Vamos converter 2,5 Litros para mL para facilitar a conta (x 1000):
+2,5 L = **2.500 mL**.
+
+Agora basta dividir:
+Número de garrafas = 2.500 ÷ 300
+Corta os zeros: 25 ÷ 3 = **8,33...**
+
+Como não podemos colocar "0,33 de uma garrafa", o número máximo inteiro é **8 garrafas**.
+
+Resposta: **8**.`,
       },
       {
         id: "q180",
         code: "Q.180",
-        topic: "Moedas",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Lógica Algébrica",
+        xp: 150,
+        image: "/q180.png",
+        question: `Quatro amigos, cada um com 100 moedas, criaram um jogo, no qual cada um assume uma das quatro posições, 1, 2, 3 ou 4, indicadas na figura, e nela permanece até o final.
+
+O desenvolvimento do jogo se dá em rodadas e, em todas elas, cada jogador transfere e recebe uma quantidade de moedas, da seguinte maneira:
+• o jogador na posição 1 transfere 1 moeda para o jogador na posição 2;
+• o jogador na posição 2 transfere 2 moedas para o jogador na posição 3;
+• o jogador na posição 3 transfere 3 moedas para o jogador na posição 4;
+• o jogador na posição 4 transfere 4 moedas para o jogador na posição 1, completando a rodada.
+
+Ao final da rodada n, qual é a expressão algébrica que representa o número de moedas do jogador na posição 1?
+
+A) 103 + 4n
+B) 103 + 3n
+C) 100 + 4n
+D) 100 + 3n
+E) 99 + 4n`,
+        explanation: `✅ **Gabarito: Letra D**
+
+Vamos analisar apenas o "Bolso" do **Jogador 1**.
+
+1. **Saldo Inicial:**
+Ele começa com **100** moedas.
+
+2. **O que acontece em CADA rodada (n)?**
+* **Sai (Paga):** Ele transfere **1 moeda** para o jogador 2. (-1)
+* **Entra (Recebe):** Ele recebe **4 moedas** do jogador 4. (+4)
+
+3. **Saldo Líquido da Rodada:**
+Lucro = Entra - Sai
+Lucro = 4 - 1 = **+3 moedas por rodada**.
+
+4. **Montando a Fórmula:**
+Total = (Começo) + (Ganho por rodada x Número de rodadas)
+Total = 100 + 3n.
+
+**Resposta:** 100 + 3n.`,
       },
       {
         id: "q171",
         code: "Q.171",
-        topic: "Caixas",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Geometria Espacial",
+        xp: 150,
+        question: `Um confeiteiro passou a produzir tortas em formato de cilindro circular reto, com raio da base variando entre 12 cm e 16 cm e altura de 6 cm. Essas tortas deverão ser embaladas em caixas com formato de prisma reto de base quadrada, de modo que seja possível acomodar a torta em seu interior e ainda restar pelo menos 1 cm de distância entre a torta e as superfícies internas da caixa, lateral e superior.
+
+Ele dispõe, originalmente, de caixas no formato pretendido, cujas dimensões internas são 14 cm de comprimento do lado da base e 7 cm de altura, que não atendem às suas necessidades. Portanto, ele comprará novas caixas, com o mesmo formato das caixas originais, mas com comprimento do lado da base maior, que sejam adequadas para embalar todos os tipos de torta que produz.
+
+A aresta da base das novas caixas deve ser, no mínimo, quantos centímetros maior do que a das caixas originais?
+
+A) 4
+B) 12
+C) 16
+D) 18
+E) 20`,
+        explanation: `✅ **Gabarito: Letra E**
+
+Para resolver, precisamos dimensionar a caixa para caber a **MAIOR** torta possível.
+
+1. **Dimensões da Maior Torta:**
+* Raio máximo = 16 cm.
+* O que importa para a base da caixa é a **Largura Total (Diâmetro)**.
+* Diâmetro = 2 x 16 = **32 cm**.
+
+2. **Calculando a Folga (O Pulo do Gato):**
+A questão pede 1 cm de distância das paredes.
+Imagine a torta no meio da caixa. Precisa sobrar 1 cm na esquerda **E** 1 cm na direita.
+Tamanho necessário = Diâmetro + Folga Esquerda + Folga Direita
+Tamanho necessário = 32 + 1 + 1 = **34 cm**.
+
+3. **Comparando com a Caixa Antiga:**
+* Caixa Nova (necessária): 34 cm de lado.
+* Caixa Antiga (original): 14 cm de lado.
+
+4. **A Diferença:**
+A questão pergunta quantos centímetros a nova deve ser **maior**.
+34 - 14 = **20 cm**.
+
+Resposta: **20**.`,
       },
       {
         id: "q162",
         code: "Q.162",
-        topic: "Reciclagem",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Matemática Financeira / Equações",
+        xp: 150,
+        question: `Uma empresa produziu, em um determinado mês, 110 toneladas de plástico a partir de derivados de petróleo e 80 toneladas a partir de plásticos reciclados.
+
+O custo para reciclar uma tonelada de plástico é de R$ 500,00, que equivale a 5% do custo para produzir a mesma quantidade de plástico a partir de derivados de petróleo.
+
+Para o mês seguinte, a meta dessa empresa é produzir a mesma quantidade de plástico que foi produzida nesse mês, mas com redução de, pelo menos, 50% no custo de produção.
+
+Para que no mês seguinte a empresa atinja a meta, a quantidade mínima de toneladas de plástico que devem ser produzidas a partir de reciclagem deverá ser:
+
+A) 135.
+B) 140.
+C) 155.
+D) 160.
+E) 175.`,
+        explanation: `✅ **Gabarito: Letra B**
+
+Vamos resolver passo a passo, descobrindo os preços e montando a equação do custo.
+
+**Passo 1: Descobrir o preço do Plástico de Petróleo**
+O enunciado diz que o Reciclado (R$ 500) é **5%** do preço do Petróleo.
+* 500 = 0,05 . P
+* P = 500 ÷ 0,05
+* P = **10.000** (O plástico de petróleo custa R$ 10 mil a tonelada).
+
+**Passo 2: Calcular o Custo Atual (Cenário Velho)**
+* Petróleo: 110 ton x 10.000 = 1.100.000
+* Reciclado: 80 ton x 500 = 40.000
+* **Custo Total Atual:** R$ 1.140.000,00.
+* **Produção Total:** 110 + 80 = **190 toneladas**.
+
+**Passo 3: Definir a Meta (Cenário Novo)**
+A meta é reduzir o custo em 50%.
+* Meta de Custo = 1.140.000 ÷ 2 = **R$ 570.000,00**.
+A produção total deve continuar sendo **190 toneladas**.
+
+**Passo 4: Montar a Equação**
+Vamos chamar de **x** a quantidade de plástico reciclado.
+Logo, a quantidade de petróleo será **(190 - x)**.
+
+500x + 10.000(190 - x) = 570.000
+
+*Simplificando (cortando dois zeros de tudo para facilitar):*
+5x + 100(190 - x) = 5.700
+5x + 19.000 - 100x = 5.700
+-95x = 5.700 - 19.000
+-95x = -13.300  *(multiplica por -1)*
+95x = 13.300
+x = 13.300 ÷ 95
+x = **140**
+
+Resposta: **140 toneladas** de plástico reciclado.`,
       },
       {
         id: "q174",
         code: "Q.174",
-        topic: "Parcelas",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
-      },
-      {
-        id: "q169",
-        code: "Q.169",
-        topic: "Produtividade",
-        xp: 200,
-        question: "Texto...",
-        explanation: "Resolução...",
+        topic: "Equações / Matemática Financeira",
+        xp: 150,
+        question: `Um carro que custa 60 mil reais é comercializado por uma revendedora que oferece duas opções de pagamento, todas sem entrada e sem juros:
+
+• opção 1: pagamento em n parcelas iguais;
+• opção 2: pagamento em 6 parcelas a mais do que na opção 1 e, com isso, o valor de cada parcela se torna R$ 500,00 menor do que o valor da parcela na opção 1.
+
+Nas duas opções de pagamento, o valor total a ser pago pelo carro é o mesmo.
+
+Qual é a quantidade n de parcelas contidas na opção 1 de pagamento?
+
+A) 18
+B) 24
+C) 30
+D) 42
+E) 48`,
+        explanation: `✅ **Gabarito: Letra B**
+
+Você pode resolver montando uma equação gigante, ou pode usar a **Técnica da Tentativa Inteligente** (que é muito mais rápida).
+
+O valor total é **R$ 60.000,00**.
+Precisamos achar um número "n" (Opção 1) e um número "n+6" (Opção 2) que dividam 60.000 e a diferença das parcelas seja 500.
+
+**Vamos testar a Letra B (24 parcelas):**
+
+1. **Cenário 1 (n = 24):**
+60.000 ÷ 24 = **R$ 2.500,00** por parcela.
+
+2. **Cenário 2 (n + 6 parcelas):**
+Se n=24, então n+6 = **30 parcelas**.
+60.000 ÷ 30 = **R$ 2.000,00** por parcela.
+
+3. **A Prova Real:**
+A diferença entre as parcelas foi de 500 reais?
+2.500 - 2.000 = **500**.
+Sim! Bateu exatamente com o enunciado.
+
+Resposta: **24 parcelas**.
+
+---
+*Se fosse fazer pela álgebra:*
+(60000/n) - 500 = 60000/(n+6)
+Isso daria uma equação de 2º grau: n² + 6n - 720 = 0.
+Resolvendo Bhaskara, você acharia n = 24.`,
       },
     ],
   },
@@ -855,9 +1418,9 @@ function Home() {
   }
 
   function getLevel(xp) {
-    if (xp > 2500) return "Mestra do ENEM";
-    if (xp > 1000) return "Caçadora de TRI";
-    return "Novata";
+    if (xp > 2500) return "Mestra Foca";
+    if (xp > 1000) return "Foca caçadora";
+    return "Foca novata";
   }
 
   function formatText(text) {
@@ -877,9 +1440,9 @@ function Home() {
       </div>
 
       <div className="content">
-        <h1>Operação TRI 2025</h1>
+        <h1>🦭Foca no ENEM 2025🦭</h1>
         <p className="subtitle">
-          Oculte as questões tóxicas. Foque no tesouro.
+          Prova de Matemática, 📘Caderno Azul📘. Ajude a 🦭foca🦭 a resolvê-la.
         </p>
 
         {gameData.map((phase) => {
